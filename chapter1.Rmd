@@ -76,6 +76,9 @@ Refer to the examples above.
 # Find missing values: missing
 
 
+# Set variable b to 5
+
+
 # Print missing to the console
 
 
@@ -88,6 +91,9 @@ v <- c(1, 2, 3)
 
 # Find missing values: missing
 missing <- is.na(v)
+
+# Set variable b to 5
+b <- 5
 
 # Print missing to the console
 missing
@@ -102,6 +108,7 @@ test_correct({test_object("missing")},
                test_error()
              })
 
-# Final message the student will see upon completing the exercise
+test_object("b")
+test_error()
 success_msg("Good work!")
 ```
