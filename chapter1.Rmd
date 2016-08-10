@@ -101,7 +101,7 @@ test_function("is.na", args = "x")
 #                test_error()
 #              })
 
-test_object("b")
+test_object("v")
 test_error()
 success_msg("Good work!")
 ```
