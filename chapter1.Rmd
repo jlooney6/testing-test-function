@@ -78,10 +78,6 @@ Refer to the examples above.
 
 # Set variable b to 5
 
-
-# Print missing to the console
-
-
 ```
 
 *** =solution
@@ -94,19 +90,16 @@ missing <- is.na(v)
 
 # Set variable b to 5
 b <- 5
-
-# Print missing to the console
-missing
-
 ```
 
 *** =sct
 ```{r}
-test_correct({test_object("missing")}, 
-             {
-               test_function("is.na", args = "x")
-               test_error()
-             })
+test_function("is.na", args = "x")
+# test_correct({test_object("missing")}, 
+#              {
+#                test_function("is.na", args = "x")
+#                test_error()
+#              })
 
 test_object("b")
 test_error()
